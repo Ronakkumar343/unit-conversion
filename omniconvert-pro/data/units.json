@@ -1,0 +1,229 @@
+{
+  "length": {
+    "base_unit": "meter",
+    "dimension": {
+      "length": 1, "mass": 0, "time": 0, "current": 0, "temperature": 0, "amount": 0, "luminosity": 0
+    },
+    "units": {
+      "meter": {
+        "factor": 1.0,
+        "offset": 0.0,
+        "aliases": ["m", "metre", "meters"],
+        "systems": ["SI"]
+      },
+      "foot": {
+        "factor": 0.3048,
+        "aliases": ["ft", "feet", "'"],
+        "systems": ["imperial", "US"],
+        "countries": ["US", "UK"]
+      },
+      "inch": {
+        "factor": 0.0254,
+        "aliases": ["in", "inches", "\""],
+        "systems": ["imperial", "US"]
+      },
+      "mile": {
+        "factor": 1609.344,
+        "aliases": ["mi", "miles"],
+        "systems": ["imperial", "US"]
+      },
+      "yard": {
+        "factor": 0.9144,
+        "aliases": ["yd", "yards"],
+        "systems": ["imperial", "US"]
+      },
+      "kilometer": {
+        "factor": 1000.0,
+        "aliases": ["km", "kilometers", "kilometre"]
+      },
+      "centimeter": {
+        "factor": 0.01,
+        "aliases": ["cm", "centimeters", "centimetre"]
+      },
+      "millimeter": {
+        "factor": 0.001,
+        "aliases": ["mm", "millimeters", "millimetre"]
+      },
+      "gallon": {
+        "factor": null,
+        "country_variants": {
+          "US": 3.785411784,
+          "UK": 4.54609
+        },
+        "aliases": ["gal", "gallons"],
+        "note": "Must specify US or UK"
+      }
+    }
+  },
+  "mass": {
+    "base_unit": "kilogram",
+    "dimension": {
+      "length": 0, "mass": 1, "time": 0, "current": 0, "temperature": 0, "amount": 0, "luminosity": 0
+    },
+    "units": {
+      "kilogram": {
+        "factor": 1.0,
+        "aliases": ["kg", "kilograms", "kilo"]
+      },
+      "gram": {
+        "factor": 0.001,
+        "aliases": ["g", "grams"]
+      },
+      "milligram": {
+        "factor": 0.000001,
+        "aliases": ["mg", "milligrams"]
+      },
+      "tonne": {
+        "factor": 1000.0,
+        "aliases": ["t", "metric ton", "tonnes"]
+      },
+      "pound": {
+        "factor": 0.45359237,
+        "aliases": ["lb", "lbs", "pounds"],
+        "systems": ["imperial", "US"]
+      },
+      "ounce": {
+        "factor": 0.028349523125,
+        "aliases": ["oz", "ounces"],
+        "systems": ["imperial", "US"]
+      }
+    }
+  },
+  "time": {
+    "base_unit": "second",
+    "dimension": {
+      "length": 0, "mass": 0, "time": 1, "current": 0, "temperature": 0, "amount": 0, "luminosity": 0
+    },
+    "units": {
+      "second": {
+        "factor": 1.0,
+        "aliases": ["s", "sec", "seconds"]
+      },
+      "minute": {
+        "factor": 60.0,
+        "aliases": ["min", "minutes"]
+      },
+      "hour": {
+        "factor": 3600.0,
+        "aliases": ["h", "hr", "hours"]
+      },
+      "day": {
+        "factor": 86400.0,
+        "aliases": ["d", "days"]
+      },
+      "week": {
+        "factor": 604800.0,
+        "aliases": ["wk", "weeks"]
+      }
+    }
+  },
+  "temperature": {
+    "base_unit": "kelvin",
+    "dimension": {
+      "length": 0, "mass": 0, "time": 0, "current": 0, "temperature": 1, "amount": 0, "luminosity": 0
+    },
+    "units": {
+      "kelvin": {
+        "factor": 1.0,
+        "offset": 0.0,
+        "aliases": ["k", "kelvin"]
+      },
+      "celsius": {
+        "factor": 1.0,
+        "offset": 273.15,
+        "aliases": ["c", "celsius", "°c"]
+      },
+      "fahrenheit": {
+        "factor": 0.5555555555555556,
+        "offset": 255.37222222222222,
+        "aliases": ["f", "fahrenheit", "°f"]
+      }
+    }
+  },
+  "volume": {
+    "base_unit": "liter",
+    "dimension": {
+      "length": 3, "mass": 0, "time": 0, "current": 0, "temperature": 0, "amount": 0, "luminosity": 0
+    },
+    "units": {
+      "liter": {
+        "factor": 1.0,
+        "aliases": ["l", "liter", "liters", "litre"]
+      },
+      "milliliter": {
+        "factor": 0.001,
+        "aliases": ["ml", "milliliter", "milliliters", "millilitre"]
+      },
+      "cubic_meter": {
+        "factor": 1000.0,
+        "aliases": ["m3", "cum", "cubic meter"]
+      },
+      "cubic_foot": {
+        "factor": 28.316846592,
+        "aliases": ["ft3", "cubic foot", "cubic feet"]
+      },
+      "fluid_ounce": {
+        "factor": 0.0295735,
+        "aliases": ["fl oz", "fluid ounce"]
+      }
+    }
+  },
+  "area": {
+    "base_unit": "square_meter",
+    "dimension": { "length": 2, "mass": 0, "time": 0, "current": 0, "temperature": 0, "amount": 0, "luminosity": 0 },
+    "units": {
+      "square_meter": {
+        "factor": 1.0,
+        "aliases": ["m2", "sqm"]
+      },
+      "square_foot": {
+        "factor": 0.092903,
+        "aliases": ["ft2", "sqft", "square foot"]
+      },
+      "acre": {
+        "factor": 4046.856,
+        "aliases": ["acre", "acres"]
+      },
+      "hectare": {
+        "factor": 10000.0,
+        "aliases": ["ha", "hectare", "hectares"]
+      },
+      "square_inch": {
+        "factor": 0.00064516,
+        "aliases": ["in2", "sqin", "square inch"]
+      },
+      "bigha": {
+        "factor": null,
+        "country_variants": {
+          "IN-UP": 2529.3,
+          "IN-RJ": 1618.7,
+          "PK": 2529.3
+        },
+        "aliases": ["bigha", "vigha"],
+        "note": "Area unit. Specify country/state."
+      }
+    }
+  },
+  "speed": {
+    "base_unit": "meter_per_second",
+    "dimension": { "length": 1, "mass": 0, "time": -1, "current": 0, "temperature": 0, "amount": 0, "luminosity": 0 },
+    "units": {
+      "meter_per_second": {
+        "factor": 1.0,
+        "aliases": ["m/s", "mps", "meter per second"]
+      },
+      "kilometer_per_hour": {
+        "factor": 0.2777777777777778,
+        "aliases": ["km/h", "kph", "kilometer per hour"]
+      },
+      "mile_per_hour": {
+        "factor": 0.44704,
+        "aliases": ["mph", "mile per hour"]
+      },
+      "knot": {
+        "factor": 0.5144444444444445,
+        "aliases": ["kn", "kt", "knot", "knots"]
+      }
+    }
+  }
+}
