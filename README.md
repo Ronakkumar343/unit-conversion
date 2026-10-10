@@ -5,7 +5,7 @@ A unit and currency converter built in Python — a modular converter engine, a 
 ## What it does
 
 - Converts everyday units across categories (length, mass, temperature, and more)
-- Converts currencies using exchange rates from a dedicated provider module
+- Converts currencies using a dedicated provider module with a small built-in rate snapshot (not live market rates)
 - Keeps unit definitions in a registry, so adding a new unit or category doesn't touch the conversion logic
 
 ## Project layout
@@ -19,6 +19,7 @@ The application lives in the [`omniconvert-pro/`](omniconvert-pro/) folder:
 | `unit_registry.py` | Unit and category definitions |
 | `currency_provider.py` | Currency / exchange-rate handling |
 | `data/` | Supporting data files |
+| `tests/` | Unit tests for the engine (`python -m unittest discover -s tests`) |
 
 See the README inside `omniconvert-pro/` for setup details.
 

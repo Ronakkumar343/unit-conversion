@@ -43,15 +43,6 @@
       "millimeter": {
         "factor": 0.001,
         "aliases": ["mm", "millimeters", "millimetre"]
-      },
-      "gallon": {
-        "factor": null,
-        "country_variants": {
-          "US": 3.785411784,
-          "UK": 4.54609
-        },
-        "aliases": ["gal", "gallons"],
-        "note": "Must specify US or UK"
       }
     }
   },
@@ -165,6 +156,15 @@
       "fluid_ounce": {
         "factor": 0.0295735,
         "aliases": ["fl oz", "fluid ounce"]
+      },
+      "gallon": {
+        "factor": null,
+        "country_variants": {
+          "US": 3.785411784,
+          "UK": 4.54609
+        },
+        "aliases": ["gal", "gallons"],
+        "note": "Must specify US or UK"
       }
     }
   },

@@ -1,20 +1,48 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# OmniConvert Pro
 
-# Run and deploy your AI Studio app
+A unit and currency converter written in Python with a Streamlit UI.
+Unit definitions live in a JSON registry, conversion logic in a small
+engine module, and currency conversion in its own provider module —
+adding a unit means editing data, not code.
 
-This contains everything you need to run your app locally.
+## Run locally
 
-View your app in AI Studio: https://ai.studio/apps/2e4d02c9-636d-4daa-8fcb-b9e2c08e3497
+**Prerequisites:** Python 3
 
-## Run Locally
+1. Install Streamlit:
+   `pip install streamlit`
+2. Run the app from this folder:
+   `streamlit run app.py`
 
-**Prerequisites:**  Node.js
+## Use the engine without the UI
 
+```python
+from unit_registry import UnitRegistry
+from converter_engine import ConverterEngine
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+engine = ConverterEngine(UnitRegistry("data/units.json"))
+print(engine.convert(1, "mile", "kilometer").value)        # 1.609344
+print(engine.convert(1, "gallon", "liter", country="US").value)  # 3.785411784
+```
+
+Units whose size depends on the country (gallon: US vs UK; bigha:
+Indian state / Pakistan) need a `country` (and where relevant a
+`state`) argument — without one the engine raises an error instead of
+guessing.
+
+## Tests
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The suite covers length, mass, temperature (including the
+below-absolute-zero guard), volume, area variants, speed, error
+cases, and currency conversion.
+
+## Notes
+
+- Currency rates in `currency_provider.py` are a small built-in
+  snapshot (USD, EUR, GBP, JPY, INR, CAD) — they are **not** live
+  market rates.
+- Temperature conversions are checked against absolute zero (0 K).
